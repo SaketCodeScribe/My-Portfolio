@@ -642,7 +642,7 @@ html{
   justify-content: flex-start;
 }
 
-.sub-container2 > .button-class > .btn1{
+.sub-container2 .button-class a .btn1{
   background-color: transparent;
   padding: .8rem 3rem;
   margin: 2rem 4rem 0 0;
@@ -661,7 +661,7 @@ html{
   -o-transition: all .3s;
 }
 
-.sub-container2 > .button-class > .btn1:hover{
+.sub-container2 .button-class a .btn1:hover{
   background-color: var(--primary);
   color: var(--dark);
 }
