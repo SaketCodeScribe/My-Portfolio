@@ -21,6 +21,7 @@
 body{
   font-family: 'Poppins', sans-serif;
   background: var(--light);
+  overflow: hidden;
 }
 
 header{
@@ -383,13 +384,13 @@ html{
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  left: 88rem;
+  width: 1rem;
+  left: 84rem;
   display: inline-block;
 }
 
 .dropbtn {
-  background-color: var(--ternary);
-  width: 4rem;
+  background-color: var(--light);
   color: white;
   padding: 16px;
   font-size: 30px;
@@ -397,6 +398,33 @@ html{
   cursor: pointer;
   border-radius: 5%;
 }
+
+
+.dropbtn .container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
 
 .dropdown-content {
   display: none;
@@ -414,14 +442,16 @@ html{
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  background-color: var(--primary);
 }
 
 .container1{
@@ -688,6 +718,14 @@ html{
   font-size: 1.1rem;
   font-family: 'Lato', sans-serif;
   margin-bottom: 1rem;
+  text-align: left;
+}
+
+.container2 > .sub-container2 ul li{
+  color: var(--ternary);
+  font-size: 1.1rem;
+  font-family: 'Lato', sans-serif;
+  margin-left: 1rem;
   text-align: left;
 }
 
