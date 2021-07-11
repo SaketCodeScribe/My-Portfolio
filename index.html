@@ -8,15 +8,29 @@
 	<link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Tangerine:wght@700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/style1.css" type="text/css">
 </head>
 <body>
+	<div id="loadingDiv" class="wrap-loader">
+	  <div class="loader">
+	    <div class="box"></div>
+	    <div class="box"></div>
+	    <div class="box"></div>
+	    <div class="box"></div>
+	    <div class="wrap-text"> 
+	      <div class="text"><span>L</span><span>O</span><span>A</span><span>D</span><span>I</span><span>N</span><span>G</span><span>...</span>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="loader-text">wait please</div>
+	</div>
+
 	<header>
-		<div class="container1">
+		<div id='menu-bar' class='menu'>
 			<img class="logo-img" src="images/logo.png" alt="Mobius">
 			<div class="sub-container1">
 				<span class="title">Mobius</span>
-				<nav class="nav-bar">	
+				<nav id="navbar" class="nav-bar">	
 					<a href="#">Home</a>
 					<a href="#about">About</a>
 					<a href="#work">My Works</a>
@@ -26,6 +40,8 @@
 			<div class="sub-container2">
 				<a href="#contact"><button class="btn">Contact</button></a>
 			</div>
+		</div>
+		<div class="container1">
 			<div class="about-me">
 				<div class="sub-container1">
 					<img class="me-img" src="images/me.jpg" alt="Me">
@@ -41,14 +57,22 @@
 					</div>
 					<div class="button-class">
 						<button class="btn1">Resume</button>
-						<button class="btn1">My Works</button>
 					</div>
 				</div>
 			</div>	
 		</div>
 	</header>
+	<div class="dropdown">
+	  <button class="dropbtn">&#xFE19;</button>
+	  	<div class="dropdown-content"><a href="#">Home</a>
+			<a href="#about">About</a>
+			<a href="#work">My Works</a>
+			<a href="#blog">Blog</a>
+			<a href="#contact">Contact</a>
+		</div>
+	</div>
 
-	<section id="about">
+	<section id="about" class="about-section">
 		<div class="container2">
 			<div class="sub-container1">
 				<img class="me-img" src="images/me-2.jpg" alt="Saket">
@@ -61,10 +85,10 @@
 					<p>A positive attitude with a zeal of learning and taking responsibility.</p>
 				</div>
 				<div class="anchor">
-					<a href="#"><img src="images/linkedin.png" alt="github"></a>
-					<a href="#"><img src="images/facebook.png" alt="facebook"></a>
+					<a href="https://www.linkedin.com/in/saket-suman-530549173"><img src="images/linkedin.png" alt="github"></a>
+					<a href="https://www.facebook.com/saket.suman.355"><img src="images/facebook.png" alt="facebook"></a>
 					<a href="#"><img src="images/twitter.png" alt="twitter"></a>
-					<a href="#"><img src="images/instagram.png" alt="instagram"></a>
+					<a href="https://www.instagram.com/saket_0565/"><img src="images/instagram.png" alt="instagram"></a>
 				</div>
 			</div>
 		</div>
@@ -76,7 +100,7 @@
 			<p>I provide limitless effort to my works.</p>
 			<div class='slider'>
 				<div class="slide">
-					<a href="#">
+					<a href="https://github.com/saket0565/Gesture-Gaming">
 						<div class='content'>
 							<img class="logo-img" src="images/gesturegaming.jpg" alt="Gesture Gaming">
 							<div class="overlay">
@@ -88,7 +112,7 @@
 					</a>
 				</div>	
 				<div class="slide">
-					<a href="#">
+					<a href="https://github.com/saket0565/LeetCode">
 						<div class='content'>
 							<img class="logo-img" src="images/cp.jpg" alt="Competitive Programming">
 							<div class="overlay">
@@ -100,9 +124,9 @@
 					</a>
 				</div>
 				<div class="slide">
-					<a href="#">
+					<a href="https://github.com/saket0565/Kaggle">
 						<div class='content'>
-							<img class="logo-img" src="images/kaggle.jpg" alt="Kaggle Competitions">
+							<img class="logo-img" src="images/kaggle.png" alt="Kaggle Competitions">
 							<div class="overlay">
 							    <div class="text">
 							    	<p>Kaggle competitions for enhancing my machine learning skills</p>
@@ -112,7 +136,7 @@
 					</a>
 				</div>
 				<div class="slide">
-					<a href="#">
+					<a href="https://github.com/saket0565/Deep-Learning-Networks">
 						<div class='content'>
 							<img class="logo-img" src="images/deeplearning.jpg" alt="Deep Learning">
 							<div class="overlay">
@@ -124,7 +148,7 @@
 					</a>
 				</div>
 				<div class="slide">
-					<a href="">
+					<a href="https://github.com/saket0565/Binary-Calculator">
 						<div class='content'>
 							<img class="logo-img" src="images/binarycalculator.jpg" alt="Deep Learning">
 							<div class="overlay">
@@ -140,7 +164,7 @@
 		</div>
 	</section>
 
-	<section id="blog">
+	<section id="blog" class="blog-section">
 		<div class='blog'>
 			<h1><span>B</span>log</h1>
 			<div class='blog-img'>
@@ -164,19 +188,30 @@
 			<div class="button-class">
 				<button class="btn">Send Message</button>
 			</div>
-	</section>
-	<footer>
-		<img class="logo-img" src="images/logo.png" alt="Mobius">
-		<div class="footer">
-			<a href="#"><img src="images/linkedin.png" alt="github"></a>
-			<a href="#"><img src="images/facebook.png" alt="facebook"></a>
-			<a href="#"><img src="images/twitter.png" alt="twitter"></a>
-			<a href="#"><img src="images/instagram.png" alt="instagram"></a>
 		</div>
-	</footer>
+		<footer>
+			<img class="logo-img" src="images/logo.png" alt="Mobius">
+			<div class="footer">
+				<a href="https://www.linkedin.com/in/saket-suman-530549173"><img src="images/linkedin.png" alt="github"></a>
+				<a href="https://www.facebook.com/saket.suman.355"><img src="images/facebook.png" alt="facebook"></a>
+				<a href="#"><img src="images/twitter.png" alt="twitter"></a>
+				<a href="https://www.instagram.com/saket_0565/"><img src="images/instagram.png" alt="instagram"></a>
+			</div>
+		</footer>
+	</section>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/portfolio.js"></script>
+	<script>
+		$(window).on('load', function(){
+			setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+		});
+		function removeLoader(){
+		    $("#loadingDiv").fadeOut(500, function() {
+		    	$("#loadingDiv").remove();
+		  });  
+		}
+	</script>
 </body>
 </html>
